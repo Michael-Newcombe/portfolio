@@ -1,0 +1,213 @@
+// Importing variables and mixins
+@import "./variables&mixins";
+// Importing animations
+@import "./animations";
+
+// Mixin for current tab
+@mixin current-tab-style{
+  background: $secondary-colour;
+  color: #ffffff;
+  box-shadow: $box-shadow;
+}
+
+// Projects container
+.projects-container{
+  margin: 3rem 0;
+  background: $content-background-colour;
+  border-radius: 12px;
+  box-shadow: $box-shadow;
+  .inactive{
+    display: none;
+  }
+  // Projects nav menu
+  .projects-nav{
+    @include flexbox-row();
+    background: #d4d4d4;
+    border-radius: 12px 12px 0 0;
+    button{ 
+      font-size: 1rem;
+      font-family: $main-font-family;
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      color: #696969;
+    }
+    button:first-child{
+      border-radius: 12px 0 0 0;
+    }
+    button:hover{
+      transition: 1s ease; 
+      @include current-tab-style();
+    }
+    .current-tab{
+      @include current-tab-style();
+    }
+  }
+  // Project style
+  .project{
+    border-bottom: $secondary-colour 2px solid;
+    padding: 2rem;
+    animation: fadeIn 3s;
+    // Project text and image container
+    .project-info{
+      @include flexbox-row();
+      align-items: flex-start;
+      color: #1F1F1F;
+      width: 100%;
+      // Project text container
+      .project-text{
+        width: 50%;
+        margin-right: 1rem;
+        h2{
+          font-size: 1.50rem;
+          margin-top: 0;
+          color: $heading-font-colour;
+        }
+        h3{
+          font-size: 1.25rem;
+          color: $heading-font-colour;
+        }
+        p{
+          @include paragraph-style();
+        }
+        .project-links {
+          font-size: 1.25rem;
+          a{
+            display: block;
+            font-size: 1rem;
+            color: #1F1F1F;
+            margin-bottom: 1rem;
+            font-family: $secondary-font-family;
+          }
+          a:last-of-type{
+            margin-bottom: 0;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+      // Play button container
+      .play-btn-container {
+        margin-top: 1rem;
+        @include flexbox-row();
+        align-items: center;
+        p{
+          font-size: 1.25rem;
+          font-family: $main-font-family;
+          text-transform: capitalize;
+        }
+        button{
+          margin-left: 1.5rem;
+        }
+        .play-btn{
+        padding: 0;
+        }
+        .svg-play-btn {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+      // Project image container
+      .project-image{
+        width: 50%;
+        margin-top: 3.25rem;
+        img{
+          width: 100%;
+          box-shadow: $box-shadow;
+          border-radius: 4px;
+        }
+      } 
+    }
+  }
+  .project:last-child{
+    border-bottom: 0;
+  }
+}
+
+// Project video overlay
+.project-video-overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.5s;
+  overflow-y: scroll;
+  // Project video container
+  .project-video-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 720px;
+    width: 100%;
+    padding: 3rem;
+    background: $content-background-colour;
+    video{
+      width: 100%;
+    }
+    // Close video button container
+    .close-btn-container{
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: right;
+      background: $secondary-colour;
+      padding: 0.25rem;
+      button{
+        color: #f5f5f5;
+      }
+    }
+  }
+}
+
+// Large Mobile Devices
+@media (max-width: 1024px) {
+  // Project text and image container
+  .projects-container .project .project-info{
+    @include flexbox-column();
+    // Project text container
+    .project-text{
+      width: 100%;
+      margin-right: 0;
+    }
+    // Project image container
+    .project-image{
+      margin-top: 2rem;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Mobile Devices
+@media (max-width: 768px) {
+  // Projects container
+  .projects-container{
+    // Projects nav menu
+    .projects-nav{
+      @include flexbox-column();
+      align-items: flex-start;
+      button{
+        width: 100%;
+      }
+      button:first-child{
+        border-radius: 12px 12px 0 0;
+      }
+    }
+  }
+   // Project video container
+  .project-video-overlay .project-video-container{
+  padding: 0;
+    // Close video button container
+    .close-btn-container{
+      top: -3.75rem;
+    }
+  }
+  
+}

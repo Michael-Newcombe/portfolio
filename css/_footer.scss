@@ -1,0 +1,16 @@
+// Importing variables and mixins
+@import "./variables&mixins";
+// Footer
+footer {
+  position: relative;
+  background: #363636;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  padding: 1.25rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #E8E8E8;
+  text-transform: uppercase;
+}

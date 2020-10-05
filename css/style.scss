@@ -1,0 +1,65 @@
+// Importing variables and mixins
+@import "./variables&mixins";
+// Importing header style
+@import "./header";
+// Importing index page style
+@import "./index";
+// Importing about me page style
+@import "./aboutMe";
+// Importing project page style
+@import "./projects";
+// Importing footer style
+@import "./footer";
+
+// Global Styling
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: $main-font-family;
+  background: url(../images/AdobeStock_227437273.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.main-container{
+  min-height: 100%;
+  overflow: hidden;
+  background: linear-gradient(-180deg,
+  rgba(255, 255, 255, 0.3),
+  rgba(101, 101, 101, 0.6) 50%,
+  rgba(51, 51, 51,0.9) 100%);
+}
+.secondary-container {
+  margin: auto;
+  position: relative;
+  width: 95%;
+}
+p{
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+video:focus{
+  outline: 0;
+}
+
+// Mobile Devices
+@media (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
+}

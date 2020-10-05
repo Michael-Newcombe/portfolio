@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Michael Newcombe Portfolio Projects Page</title>
+    <meta charset="utf-8">
+    <meta name ="description" content="Michael Newcombe Portfolio">
+    <meta name="keywords" content="Portfolio,University,Student,Projects,Programming,Web Development,Software Development,Web Apps,Games Programming,Audio Programming">
+    <meta name="author" content="Michael Newcombe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jura:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!-- Main container start -->
+    <div class="main-container">
+    <header>
+      <div class="svg-container">
+        <svg class="title-curve" xmlns="http://www.w3.org/2000/svg" width="500px" height="500px" xml:space="preserve">
+        <ellipse cx="175" cy="0" rx="350" ry="200" transform="rotate(-20 100 100)"/>
+        </svg> 
+        <!-- <svg class="nav-curve" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 640 359">
+        <defs><style>.cls-1{fill:#fff;}</style></defs>
+        <path class="cls-1" d="M0,0"/><path class="cls-1" d="M0,0S0,240,320,240,640,359,640,359V0Z"/>
+        </svg> -->
+      </div>
+      <!-- Secondary container start -->
+      <div class="secondary-container">
+        <nav>
+          <span><h1>Michael Newcombe</h1></span>
+          <span class="nav-icon">&#9776</span>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html" class="current-link">Projects</a>
+          </div>
+        </nav>
+      <!-- Secondary container end -->
+      </div>
+    </header>
+    <!-- Main start -->
+    <main>
+      <!-- Secondary container start -->
+      <div class="secondary-container">
+        <!-- Projects container start -->
+        <div class="projects-container">
+          <div class="projects-nav">
+            <button class="tab-nav-btn current-tab"id="web-apps-link">Web Apps/Sites</button>
+            <button class="tab-nav-btn" id="desktop-apps-link">Desktop Apps</button>
+            <button class="tab-nav-btn" id="games-link">Games</button>
+            <button class="tab-nav-btn" id="other-link">Other</button>
+          </div>
+          <!-- Web apps start -->
+          <div id="web-app-projects" class="projects-content">
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Describe My Location</h2>
+                  <p>Describe My Location is a mobile web app I developed for my 3rd-year project at university. The app aims to aid people who are visually impaired when they are walking along a street, by describing their physical surroundings, using a computer vision and machine learning technique called image captioning. This is where a computer tries to describe an image in a natural language. The difference between this app and other visual aid apps that use image captioning is that Describe My Location does not require the user to take a picture of their surroundings using their device's camera. Instead, the app uses a street view image based on the user's current geographical location as a reference for their surroundings. This works by retrieving the latitude and longitude coordinates of the user's device, in addition to this, the app also takes into account the direction the user is facing by retrieving the heading direction of the user's device. This information is then passed into a Bing Maps API to download a street view image based on those coordinates. The street view image is then, passed into a pre-trained image captioning model called DenseCap, which generates a text description for the image. The text description is then, passed into a text to speech system so that the text, can be outputted as speech for visually impaired users. The app also allows users to upload images using their device's camera as well as images saved on their device. This is in case the geolocation feature is not working, for example, if there is no street view image coverage for a specific location. I developed this app using the Python web framework Flask along with SASS for the styling and vanilla JavaScript for the user interactivity.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Visual-Aid-Mobile-App-Describe-My-Location-" target="blank">GitHub</a>
+                    <a href="https://gitlab.doc.gold.ac.uk/mnewc002/computer-vision-and-machine-learning" target="blank">GitLab</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-describe-my-location" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#708090" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#708090"></path></g>
+                      </svg>
+                    </button>
+                  </div>
+                <!-- Project text end -->
+                </div>  
+                <div class="project-image">
+                  <img src="./images/projects/describe-my-location.jpg" alt="describe-my-location">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>MPC</h2>
+                  <p>A virtual implementation of a music production controller (MPC), which I developed in my spare time. The MPC has 9, different sounds to chose from and 3, adjustable audio effect parameters which control the volume, the amount of delay and the cut-off frequency of a low pass filter. I created this web app in JavaScript using the library P5.js.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/MPC" target="blank">GitHub</a>
+                    <a style="display: inline;" href="https://zixi7.csb.app/" target="blank">Live Demo</a>
+                    <p style="display: inline;">&#40;Does not work in Chrome&#41;</p>
+                  </div>
+                  <div class="play-btn-container">
+                    <p>Play Video</p>
+                    <button type="button" id="video-mpc" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/mpc.jpg" alt="mpc">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Tedbree Wedding App</h2>
+                  <p>While working as a Front End Web Developer Intern at Tedbree Digital, I was tasked with turning prototype designs created by the company's design team into source code, as well as assisting the lead developer with the development of current projects. This consisted of developing interactive websites and static website templates using Vue.js. One of Tedbree Digital prototypes was for a wedding app designed to simplify the wedding process by allowing the user to plan out the entire wedding process such as booking a venue and hiring a photographer using a single app. For this specific prototype, I was tasked, with developing a static template in Vue.js based on the prototype design created by the design team. Therefore if the company decided to develop this product, they would already have a template to work with, also so that the lead developer could see how this prototype looked when turned into source code.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://codesandbox.io/s/vue-template-hus5t" target="blank">Static Template</a>
+                  </div>
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/tedbree-wedding-app.jpg" alt="tedbree-wedding-app">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>TedbreeSocial</h2>
+                  <p>During my time at Tedbree Digital, I was tasked, with assisting the lead developer with the development of current projects, one of which was for a web app called TedbreeSocial. TedbreeSocial is a social media and marketing platform designed to increase a company's online presence by helping the user with marketing the right content to the right audience. This is done, through search engine optimization driven social media posts, creative videos, blog outreach and sharing on multiple social media platforms. For this project, I assisted the lead developer with the front end side of the app such as the website navigation, testing different designs for each of the tabs using dummy data and making sure all the content is fully responsive. I did this in Vue.js using where I used the framework tailwind CSS for the app styling. I was also introduced to some of the backend development for the app which was implemented in PHP using the framework Laravel. TedbreeSocial is now a live product where more information can be found below.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://tedbree.com/youplussocial#solutionsanc" target="blank">Official Website Link</a>
+                  </div>
+                <!-- Project text end -->
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Tedbree Event Website Template</h2>
+                  <p>This is another static website template I developed during my time at Tedbree Digital. The prototype website is meant for Tedbree Digital clients that want a website for advertising a business event. The design was created by the company's design team, I then turned it into source code using Vue.js. The template also features some basic interactivity through a mobile navigation bar which was implemented using jQuery.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://codesandbox.io/s/vue-template-2-cdb35" target="blank">Static Template</a>
+                  </div>
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/tedbree-event-template.jpg" alt="tedbree-event-website">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+          <!-- Web apps end -->
+          </div>
+          <!-- Desktop apps start -->
+          <div id="desktop-app-projects" class="inactive projects-content">
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Hows The Weather Sounding</h2>
+                  <p>Hows The Weather Sounding, is a joint 2nd-year university project that generates sound through algorithmic composition by converting weather data into audio. The application fetches weather data in JSON format through an API called OpenWeatherMap, the weather data is then converted and passed into an audio synthesizer which generates the sound. The weather data the application uses is, based on the current weather in a city. The application comes with 10 different default cities for the user to chose from, in addition to this, the user can also type in a city. The exact weather data the application uses is the current temperature, min temperature, max temperature, humidity, precipitation, wind speed, wind direction, and cloud percentage. Once a sound has been generated the user can also fine turn a sound by changing the parameters of the synthesizer. These parameters are the number of oscillators, frequency, attack, decay, release, amplitude modulation, frequency modulation and index modulation. The application is written in C++ using the framework openFrameworks along with additional openFrameworks libraries, ofxMaxim, ofxJSON and ofxDatGui.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Audio-Synthesizer-Hows-The-Weather-Sounding" target="blank">GitHub</a>
+                    <a href="https://gitlab.doc.gold.ac.uk/mnewc002/creative-projects-term-2-michael-athar" target="blank">GitLab</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-hows-the-weather-sounding" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div>
+                <!-- Project text end --> 
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/hows-the-weather-sounding.jpg" alt="hows-the-weather-sounding">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Audio Visualizer</h2>
+                  <p>An audio visualizer application, developed in my 3rd-year of university, that renders 3D primitive objects which react to different aspects of the music. This works, using a fast Fourier transform (FFT) which, extracts different audio features from the sound, these features are the peak frequency, spectral centroid, and information from an octave analyzer. This data is then, used to manipulate the 3D primitive objects as well as change the lighting. In total, there are three different songs and three different shapes to chose from. The application is written in C++ using the framework openFrameworks along with additional openFrameworks library ofxMaxim.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Audio-Visualizer" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-audio-visualizer" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                        <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                        <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/audio-visualizer.jpg" alt="audio-visualizer">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Image Filters</h2>
+                  <p>A C++ openFrameworks application developed in my 3rd-year of university showcasing image processing filters. The application demonstrates how the following image filters, grayscale, invert, brightness, and edge detection manipulate an image. The application also has a custom image filter that I created myself.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Image-Filters" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-image-filters" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/image-filters.jpg" alt="image-filters">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Audio Filters</h2>
+                  <p>A C++ openFrameworks application developed in 2nd-year of university that demonstrates how low-pass and high-pass audio filters affect a sound. The application demonstrates these filters on the following sounds, white noise, sine wave, and square wave. The application also features a frequency histogram for a visual demonstration on how the filters are affecting the sound.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Audio-Filters" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-audio-filters" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/audio-filters.jpg" alt="audio-filters">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Subtractive Synthesis</h2>
+                  <p>A subtractive synthesis application developed in my 3rd-year of university which allows the user to change the following 16 audio effect parameters; frequency, frequency modulation, frequency modulation cycle, frequency modulation amplitude, low-frequency oscillation (LFO) frequency, LFO length, LFO index, resonant filter cut-off, resonant filter gain, delay feedback, attack, decay, sustain, release, panning and amplitude. The application is written in C++ using the framework openFrameworks along with additional openFrameworks libraries, ofxMaxim and ofxGui.
+                  </p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Subtractive-Synthesis" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-subtractive-synthesis" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/subtractive-synthesis.jpg" alt="subtractive-synthesis">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>JUCE Distortion Plugin</h2>
+                  <p>A VST3 audio plugin I developed in my spare using the C++ framework JUCE. The plugin is a distortion plugin which has two distortion modes, soft clip and hard clip. Furthermore, the plugin also has a reverb feature.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Juce-Distortion-Plugin" target="blank">GitHub</a>
+                    <a href="https://drive.google.com/file/d/15Gc-sDmHPXfhtqSMcFA_AmC4QGKXvjLv/view" target="blank">Download VST</a>
+                  </div>
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/distortion-plugin.jpg" alt="distortion-plugin">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+          <!-- Desktop apps end -->
+          </div>
+          <!-- Game projects start -->
+          <div id="games-projects" class="inactive projects-content">
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Giant Escape</h2>
+                  <p>A group VR project developed in my 3rd-year of university. Giant Escape is an escape room game where the player is given an allotted time to complete 3 different puzzles. The storyline of the game is that the player has been captured by giants that want to sacrifice the player, therefore they must escape before this happens. To figure out the puzzles, the player must look for notes hidden inside the room, these notes contain riddles that give the player clues on how to complete a puzzle. The notes have been written by a person who was previously captured by the giants, however, they did not manage to escape. Once the player has figured out a puzzle, a key will appear that must be picked up and placed on the correct platform. There are 3 keys in total that the play must find, once all 3 keys have been found and placed on the correct platforms the player wins the game and escapes the giants. The game is developed using Unity, along with a library called VRTK which was used to implement the VR functionality, also the game was developed using the HTC VIVE. Furthermore, to create a more immersive VR experience the game uses a locomotion technique called walk in place, instead of the more commonly used, teleportation technique. This means to move around within the game, the player must move their arms up and down, similar to how they would in real life when walking.</p>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-giant-escape" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div>
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/giant-escape.jpg" alt="giant-escape">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>OpenCV Game</h2>
+                  <p>An OpenCV game developed in my 2nd-year of university where the player controls the avatar through a webcam using a technique called optical flow. The aim of the game is to avoid incoming obstacles by moving your head. The game is, developed in C++ using openFrameworks, along with two additional libraries for openFrameworks, which are ofxCv and ofxOpenCv.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/openCV-Game" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-openCV-game" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/openCVgame.jpg" alt="openCVgame">
+                </div>
+                <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Battle Royale AI</h2>
+                  <p>A battle royal style game developed in Unity from a third-year module I undertook at university. In this game, there are two teams of bots which fight against each other. Both of the teams consist of 25 bots, where the bots on the same team all share the same AI. The AI is implemented using an API that comes with the game which consists of various actions for a bot such as attacking, healing and fleeing, however, a bot can only perform one these actions at a time. The benchmark AI was a simple but effective AI which only ever attacked. For my AI a bot would only attack an enemy if one of its teams was nearby, if this was not the case then the bot would flee to the closest teammate. My AI would also heal the bot but only if an enemy was out of shooting range. Our bots also had to fight other bots from other students in the class to see which students had created the best AI. In this competition, my AI came in 10th place out of 45 other AI’s</p>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-battle-royale" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/battle-royale.jpg" alt="battle-royale">
+                </div>
+                <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Keep Your Head In The Game</h2>
+                  <p>Keep Your Head In The Game is a joint web-based game/app project for mobile devices that uses geolocation technology, developed in my 1st-year of university. The storyline of the game is a mystery narrative where the player has accidentally travelled back in time, where they must find there way back by finding various notes. To play the game the player has to physically walk to different locations situated around Goldsmiths, University of London, which are based, on geographic coordinates. These locations must also be, found in a specific order. Once the player has found the current location, the next location is unlocked, this reveals more of the story and gives the player clues on where the next location could be. To complete the game, the player must find all of the locations. The game is written in JavaScript using the library P5.js along with the additional P5 library, p5.geolocation.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Keep-Your-Head-In-The-Game-Geolocation-Game-" target="blank">GitHub</a>
+                    <a style="display: inline;" href="https://vnonc.csb.app/">Live Demo</a>
+                    <p style="display: inline;">&#40;For mobile devices only&#41;</p>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-keep-your-head-in-the-game" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/keep-your-head-in-the-game/image-2.jpg" alt="keep-your-head-in-the-game">
+                </div>
+                <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+             <!-- Project start -->
+             <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Snake AI</h2>
+                  <p>An AI that plays the game Snake created in my third-year of university. The game is developed in Unity and the AI uses a path finding algorithm to find the food and avoid it's body. The specific algorithm the AI uses is breadth-first search</p>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-snake-pathfinding" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/snake.jpg" alt="snake">
+                </div>
+                <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project text start -->
+                <div class="project-text">
+                  <h2>Robo Quest</h2>
+                  <p>Robo Quest is a simple 2D parallax scrolling platform game developed during my 1st year of university. The aim of the game is to collect all of the green gems while avoiding the enemies and falling off the platform. The game is written in JavaScript using the library P5.js.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/2D-Platform-Game-Robo-Quest-" target="blank">GitHub</a>
+                    <a href="https://f1cj6.csb.app/" target="blank">Live Demo</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-robo-quest" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div>
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/robo-quest.jpg" alt="robo-quest">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+          <!-- Game projects end -->
+          </div>
+          <!-- Other start -->
+          <div id="other-projects" class="inactive projects-content">
+            <!-- Project start -->
+            <div class="project">
+              <!-- Project info start -->
+              <div class="project-info">
+                <!-- Project start text -->
+                <div class="project-text">
+                  <h2>Music And Machine Learning</h2>
+                  <p>An interactive work of music developed in my 3rd-year of university, where music is, controlled using hand movement through a computer webcam. This works using a JavaScript library called Handtrack.js to capture the x/y position and the width/height of a users hand. This data is then sent over OSC to a machine learning software called Wekinator. Wekinator is then used to train a machine learning model that can control audio effects based on hand movement. This works by sending OSC messages from Wekinator to an openFrameworks application called AbletonOSC which controls audio effect parameters inside a digital audio workstation, called Ableton Live, again through OSC messages.</p>
+                  <div class="project-links">
+                    <h3>Links</h3>
+                    <a href="https://github.com/Michael-Newcombe/Music-And-Machine-Learning" target="blank">GitHub</a>
+                  </div>
+                  <div class="play-btn-container">
+                    <h3>Play Video</h3>
+                    <button type="button" id="video-music-and-machine-learning" class="play-btn">
+                      <svg class="svg-play-btn" x="0px" y="0px" viewBox="0 0 172 172">
+                      <g transform="translate(2.408,2.408) scale(0.972,0.972)"><path d="M86,169.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609z" fill="#ffffff"></path>
+                      <path d="M129.70547,86.23516c0,1.81406 -0.97422,3.56094 -2.55312,4.50156l-58.75547,35.81094c-0.83984,0.50391 -1.78047,0.77266 -2.75469,0.77266c-0.90703,0 -1.78047,-0.23516 -2.58672,-0.67187c-1.64609,-0.94062 -2.6875,-2.72109 -2.6875,-4.63594v-71.89062c0,-1.91484 1.04141,-3.69531 2.72109,-4.63594c1.64609,-0.94062 3.7625,-0.87344 5.375,0.10078l58.75547,36.11328c1.57891,0.94062 2.55313,2.6875 2.48594,4.53516z" fill="#65909A"></path></g><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" stroke="#65909A" stroke-width="5" fill="#fff"></path><path d="M127.21953,81.7l-58.75547,-36.11328c-1.6125,-0.97422 -3.72891,-1.04141 -5.375,-0.10078c-1.67969,0.94063 -2.72109,2.72109 -2.72109,4.63594v71.89063c0,1.91484 1.04141,3.69531 2.6875,4.63594c0.80625,0.43672 1.67969,0.67188 2.58672,0.67188c0.97422,0 1.91484,-0.26875 2.75469,-0.77266l58.75547,-35.81094c1.57891,-0.94063 2.55312,-2.6875 2.55312,-4.50156c0.06719,-1.84766 -0.90703,-3.59453 -2.48594,-4.53516z" fill="#65909A"></path></g>
+                      </svg>
+                    </button>
+                  </div> 
+                <!-- Project text end -->
+                </div>
+                <div class="project-image">
+                  <img src="./images/projects/music-and-machine-learning.jpg" alt="music-and-machine-learning">
+                </div>
+              <!-- Project info end -->
+              </div>
+            <!-- Project end -->
+            </div>
+          <!-- Other end -->
+          </div>
+        <!-- Projects container end -->
+        </div>
+      <!-- Secondary container end -->
+      </div>
+      <!-- Project video overlay start -->
+      <div class="project-video-overlay">
+        <div class="project-video-container">
+          <video id="video" controls disablePictureInPicture controlsList="nodownload" preload="metadata">
+          </video>
+          <div class="close-btn-container">
+            <button id="close-video-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"viewBox="0 0 172 172" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M45.74349,34.28802c-4.66401,0.00578 -8.85992,2.83567 -10.61285,7.15775c-1.75292,4.32207 -0.71362,9.27524 2.62873,12.52819l32.02604,32.02604l-32.02604,32.02604c-2.99552,2.87604 -4.20218,7.14678 -3.15461,11.16516c1.04756,4.01838 4.18566,7.15647 8.20404,8.20403c4.01838,1.04756 8.28912,-0.1591 11.16516,-3.15462l32.02604,-32.02604l32.02604,32.02604c2.87603,2.99556 7.14679,4.20225 11.1652,3.1547c4.0184,-1.04756 7.15652,-4.18567 8.20408,-8.20408c1.04756,-4.0184 -0.15913,-8.28917 -3.1547,-11.1652l-32.02604,-32.02604l32.02604,-32.02604c3.39139,-3.29657 4.4111,-8.33702 2.56778,-12.6926c-1.84331,-4.35558 -6.17151,-7.13275 -10.89903,-6.99334c-2.97902,0.08876 -5.80647,1.33381 -7.88333,3.47135l-32.02604,32.02604l-32.02604,-32.02604c-2.16155,-2.22196 -5.13056,-3.4742 -8.23047,-3.47135z"></path></g></g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      <!-- Project video overlay end -->
+      </div>
+    <!-- Main end -->
+    </main>
+  </div><!-- Main container end -->
+  <footer>
+    <p>&copy; Michael Newcombe 2020</p>
+  </footer>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="./js/navBar.js"></script>
+  </body>
+</html>

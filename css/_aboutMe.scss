@@ -1,0 +1,70 @@
+// Importing variables and mixins
+@import "./variables&mixins";
+// Importing animations
+@import "./animations";
+
+// About me content
+.about-me{
+  margin: 3rem 0;
+  padding: 2rem;
+  @include flexbox-row-center-space-between();
+  background: $content-background-colour;
+  border-radius: 12px;
+  box-shadow: $box-shadow;
+  // About me text
+  .about-me-text{
+    margin-right: 1rem;
+    animation: fadeIn 3s;
+    h2{
+      color: $heading-font-colour;
+    }
+    p{
+      @include paragraph-style();
+    }
+  }
+  // About me links
+  .about-me-links{
+    margin-top: 1rem;
+    animation: fadeIn 3s;
+    a{
+      font-family: $secondary-font-family;
+      font-size: 1rem;
+      color: $heading-font-colour;
+      margin-left: 0.25rem;
+    }
+    .about-me-link{
+      @include flexbox-row();
+      margin-bottom: 1rem;
+    }
+  }
+  // About me image
+  .about-me-img img{
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    animation: fadeIn 3s;
+  }
+}
+
+// Mobile Devices
+@media (max-width: 768px) { 
+  // About me content 
+  .about-me{
+    @include flexbox-column();
+    align-items: flex-start;
+    // About me text
+    .about-me-text{
+      margin-right: 0;
+    }
+    // About me image
+    .about-me-img {
+      margin-top: 1rem;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

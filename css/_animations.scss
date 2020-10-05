@@ -1,0 +1,33 @@
+// Fade in animation
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+// Slide left to right animation
+@keyframes leftToRight {
+  from {
+    transform: translateX(-100%);
+    opacity:0;
+  }
+  to {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+// Slide right to left animation
+@keyframes rightToLeft {
+  from {
+    transform: translateX(100%);
+    opacity:0;
+  }
+  to {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
